@@ -1,0 +1,40 @@
+{
+    "name": "dminustin/events-pipeline",
+    "description": "Events pipeline",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "api",
+        "events",
+        "listeners"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danila Minustin",
+            "email": "danila.minustin@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "laravel/framework": ">=8.40.0 || ^7.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "EventsPipeline\\": "src"
+        },
+        "files": [
+
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EventsPipeline\\EventsPipelineServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
