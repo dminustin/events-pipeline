@@ -6,7 +6,7 @@ use App\Classes\EventsPipeline\EventData;
 
 abstract class AbstractQueueManager
 {
-    public abstract function send(EventData $data): bool|string;
+    public abstract function send(string $pipeName, EventData $data): bool|string;
 
     public abstract function receive(string $pipeName): ?EventData;
     

@@ -10,8 +10,6 @@ class EventData
 
     protected mixed $attachment;
 
-    protected string $pipeName;
-
     public function __toString(): string
     {
         return json_encode([
@@ -52,23 +50,6 @@ class EventData
     public function setAttachment(mixed $attachment)
     {
         $this->attachment = $attachment;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getPipeName(): string
-    {
-        return $this->pipeName;
-    }
-
-    /**
-     * @return self
-     */
-    public function setPipeName(string $pipeName)
-    {
-        $this->pipeName = $pipeName;
         return $this;
     }
 }

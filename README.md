@@ -8,3 +8,6 @@
 
 ##Publish necessary files
 ``php artisan vendor:publish --provider "EventsPipeline\EventsPipelineServiceProvider"``
+
+##Add to config/app.php
+``\App\Providers\EventsPipelineServiceProvider::class``

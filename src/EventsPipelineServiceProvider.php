@@ -25,6 +25,7 @@ class EventsPipelineServiceProvider extends ServiceProvider
         $uploads = array_merge(
             $this->getFiles('Classes/EventsPipeline'),
             $this->getFiles('Classes/EventsPipeline/QueueManagers'),
+            $this->getFiles('Providers'),
         );
         $this->publishes($uploads, 'events-pipeline');
     }
