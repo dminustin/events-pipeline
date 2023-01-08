@@ -1,13 +1,13 @@
-#Events Pipeline
+# Events Pipeline
 
-##Version
+## Version
 1.0
 
-##Installation
+## Installation
 ``composer require --dev dminustin/events-pipeline``
 
-##Publish necessary files
+## Publish necessary files
 ``php artisan vendor:publish --provider "EventsPipeline\EventsPipelineServiceProvider"``
 
-##Add to config/app.php
-``\App\Providers\EventsPipelineServiceProvider::class``
+## Add to config/app.php
+```\App\Providers\EventsPipelineServiceProvider::class```
